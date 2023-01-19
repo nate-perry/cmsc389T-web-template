@@ -1,7 +1,6 @@
 # Nathan Perry's Website
 
 I added my:
-
 Name
 Profile Picture
 Introduction
