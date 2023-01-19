@@ -1,5 +1,8 @@
 # Nathan Perry's Website
 
+hosted @:
+https://nate-perry.github.io/cmsc389T-web-template/
+
 I added my:
 - Name
 - Profile Picture
