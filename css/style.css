@@ -102,7 +102,7 @@ html, body {
 .about-prof-image {
     float: left;
     height: 175px;
-    width: 190px;
+    /* width: 190px; */
     margin: 30px;
     border-radius: 50%;
 }
@@ -132,4 +132,8 @@ html, body {
 .main-footer-container ul {
     flex-grow: 1;
     text-align: end;
+}
+
+.indent {
+    padding-left: 15rem;
 }
