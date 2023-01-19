@@ -1,6 +1,6 @@
 # Nathan Perry's Website
 
-hosted @:
+hosted at:
 https://nate-perry.github.io/cmsc389T-web-template/
 
 I added my:
