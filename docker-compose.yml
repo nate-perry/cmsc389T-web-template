@@ -2,16 +2,19 @@ version: '3'
 
 services:
   nodejs:
-    build: 
+    #fill out the configuration here
+    build:
       context: .
       dockerfile: Dockerfile
-    image: node-web-app
-    container_name: node-web-app
+    container_name: nodejs
+    image: nodejs
     restart: unless-stopped
-    #fill out the configuration here
+    volumes:
+      - web-root:/home/node/app
+    ports:
+      - "8080:80"
     networks:
       - app-network
-    
 
   #the nginx configuration is given below
   #the website will run on localhost:80 

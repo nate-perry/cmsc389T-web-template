@@ -7,17 +7,17 @@
 
 FROM node:10-alpine
 
-# RUN mkdir -p /home/nrp/app/ && chown -R nrp:nrp /home/nrp/app
-# WORKDIR /home/nrp/app
+RUN mkdir -p /home/node/app/ && chown -R node:node /home/node/app
 
-COPY *.css ./
-COPY *.png ./
-COPY *.html ./
-COPY *.js ./
+WORKDIR /home/node/app
 
-USER node
+COPY package*.json ./
+
+COPY . .
 
 RUN npm install
+
+USER node
 
 EXPOSE 8080
 
