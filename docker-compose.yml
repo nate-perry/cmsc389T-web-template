@@ -9,10 +9,6 @@ services:
     container_name: nodejs
     image: nodejs
     restart: unless-stopped
-    volumes:
-      - web-root:/home/node/app
-    ports:
-      - "8080:80"
     networks:
       - app-network
 
@@ -23,7 +19,7 @@ services:
     container_name: webserver
     restart: unless-stopped
     ports:
-      - "80"
+      - "80:80"
     volumes:
       - web-root:/var/www/html
       - ./nginx-conf:/etc/nginx/conf.d
